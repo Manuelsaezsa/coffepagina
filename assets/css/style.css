@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+    background-color: #180b01;
+    display: block;
+    padding: 0 2rem;
+}
+
+.img-coffe {
+    filter: invert(100%);
+    zoom: 1.2;
+}
+
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 30rem;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.listado {
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.horizontal-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.imagen-principal {
+    height: 22rem;
+    width: 100%;
+    background-image: url(../img/bg-hero.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+.text-principal {
+    color: white;
+    text-align: right;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 9rem;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .text-principal {
+        width: 60%;
+        margin-left: auto;
+        margin-right: 9rem;
+        padding-top: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 1.9rem;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 768px) and (max-width: 999px) {
+    .text-principal {
+        width: 80%;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding-top: 1.5rem;
+    }
+    .navbar {
+        justify-content: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+    .imagen-principal {
+        height: 100%;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) {
+    .horizontal-list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+    }
+
+    .listado {
+        margin-right: 0;
+        margin-top: 0.5rem;
+    }
+
+    .text-principal {
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .imagen-principal {
+        height: 100%;
+        background-size: cover;
+    }
+}
+
